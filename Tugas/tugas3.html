@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px #aaa;
+        }
+        .header {
+            background: #b22222;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav {
+            text-align: center;
+            background: #d9534f;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .content {
+            display: flex;
+        }
+        .form-container {
+            flex: 2;
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #d3d3d3;
+            padding: 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Selamat Datang di Website Sederhana</div>
+    <div class="nav">
+        <a href="#">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Layanan</a>
+        <a href="#">Kontak</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="form-container">
+                <h3>Formulir Pendaftaran</h3>
+                <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
+                <label>Nama Lengkap:</label>
+                <input type="text" name="nama">
+                <label>Email:</label>
+                <input type="email" name="email">
+                <label>Password:</label>
+                <input type="password" name="password">
+                <label>Jenis Kelamin:</label>
+                <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+                <label>Hobi:</label>
+                <input type="checkbox" name="hobi"> Musik
+                <input type="checkbox" name="hobi"> Olahraga
+                <input type="checkbox" name="hobi"> Membaca
+                <label>Pilih Kota:</label>
+                <select>
+                    <option>Jakarta</option>
+                    <option>Bandung</option>
+                    <option>Surabaya</option>
+                </select>
+                <label>Pesan Tambahan:</label>
+                <textarea placeholder="Tulis pesan di sini..."></textarea>
+                <button class="button">Kirim</button>
+            </div>
+            <div class="sidebar">
+                <h3>Sidebar</h3>
+                <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
