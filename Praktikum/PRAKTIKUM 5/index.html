@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 5</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <h1>JavaScript di dalam elemen HTML</h1>
+    <button onclick="alert('Halo Ganteng')"> Klik Saya!</button> <br>
+    <h1>Javascript di dalam tag script</h1>
+    <h2 id="judul">Selamat Datang</h2>
+    <button onclick="ubahTeks()">Ubah Teks Ini!</button>
+
+    <script>
+        function ubahTeks(){
+            document.getElementById("judul").innerHTML = "Halo geyss";
+        }
+    </script>
+
+    <h1>JavaScript di dalam file Eksternal</h1>
+    <button onclick=salam()>Klik saya!</button>
+
+</body>
+</html>
