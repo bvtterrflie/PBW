@@ -1,0 +1,85 @@
+:root {
+  --bg: #e0f2ff;
+  --card-bg: #ffffff;
+  --primary: #3b82f6;
+  --text: #1e3a8a;
+  --accent: #60a5fa;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #1e40af;
+}
+
+.section-title {
+  margin: 60px 0 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+#tugasPBW{
+	margin-top: 20px; /* jarak antara praktikum dan tugas*/
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid var(--accent);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.card p {
+  margin-top: 10px;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
